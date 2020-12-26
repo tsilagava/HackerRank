@@ -1,6 +1,9 @@
 from itertools import product
 
-A = input('enter A: ')
-B = input('enter B: ')
+A = input()
+B = input()
 
-print(list(product(A, B)))
+A_new = [int(i) for i in A.split()]
+B_new = [int(i) for i in B.split()]
+
+print(*product(A_new, B_new))
